@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Design Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">InteriorDesign</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="team.html">Team</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Transform Your Space with Creativity</h1>
+            <p>We design beautiful, functional spaces tailored to your needs.</p>
+            <a href="services.html" class="btn">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="about-preview">
+        <h2>Why Choose Us?</h2>
+        <p>Our expert team brings innovative ideas to transform your space into a masterpiece. From modern aesthetics to
+            timeless classics, we deliver perfection in every project.</p>
+        <a href="about.html" class="btn">Learn More</a>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+
+            <!-- Service 1 -->
+            <div class="service-box">
+                <img src="https://th.bing.com/th/id/OIP.C1gy6rBTwOrqyOWcgn76sAAAAA?rs=1&pid=ImgDetMain"
+                    alt="Interior Design">
+                <h3>Interior Design</h3>
+                <p>We create personalized interiors with innovative designs and high-quality materials.</p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-box">
+                <img src="https://th.bing.com/th/id/OIP.VOmC0-RyZeO4pc_a-Q4D5wHaE7?rs=1&pid=ImgDetMain"
+                    alt="Space Planning">
+                <h3>Space Planning</h3>
+                <p>Our team optimizes your space to make it functional, comfortable, and beautiful.</p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-box">
+                <img src="https://th.bing.com/th/id/OIP.S1jdUlDoDBnhLHbudx4paQHaEb?rs=1&pid=ImgDetMain"
+                    alt="Furniture Design">
+                <h3>Furniture Design</h3>
+                <p>Customized furniture designs that reflect your personality and style.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Designs -->
+    <section class="featured">
+        <h2>Our Featured Designs</h2>
+        <div class="design-gallery">
+            <img src="https://th.bing.com/th/id/OIP._Pg_-LCHeUKeYxsgIDVGDwHaE8?rs=1&pid=ImgDetMain"
+                alt="Living Room Design">
+            <img src="https://evolveindia.co/wp-content/uploads/2021/07/1_The-Wooden-Rhapsody-Modern-Bedroom-Interior-Design.jpg"
+                alt="Bedroom Design">
+            <img src="https://th.bing.com/th/id/OIP.VvmxgBX8pTBnN6zZKDUpxwHaE8?rs=1&pid=ImgDetMain"
+                alt="Kitchen Design">
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <h2>Meet Our Interior Design Experts</h2>
+        <div class="team-container">
+
+            <!-- CEO -->
+            <div class="team-member" onclick="openContactForm('Krish Shiyani', 'CEO & Founder')">
+                <img src="images/ceo.jpg" alt="">
+                <h3>Krish Shiyani</h3>
+                <p>CEO & Founder</p>
+                <p>Leads the team with vision and ensures innovative and functional interior design solutions.</p>
+            </div>
+
+            <!-- Interior Designer -->
+            <div class="team-member" onclick="openContactForm('jasmeet singh', 'Senior Interior Designer')">
+                <img src="images/designer.jpg" alt="">
+                <h3>jasmmet singh</h3>
+                <p>Senior Interior Designer</p>
+                <p>Crafts elegant and modern interiors that reflect clients' personalities and preferences.</p>
+            </div>
+
+            <!-- Project Manager -->
+            <div class="team-member" onclick="openContactForm('vraj kukadiya', 'Project Manager')">
+                <img src="images/manager.jpg" alt="">
+                <h3>vraj kukadiya</h3>
+                <p>Project Manager</p>
+                <p>Oversees projects to ensure timely delivery and adherence to client requirements.</p>
+            </div>
+
+            <!-- Client Coordinator -->
+            <div class="team-member" onclick="openContactForm('utsav kheni', 'Client Coordinator')">
+                <img src="images/coordinator.jpg" alt="">
+                <h3>utsav kheni</h3>
+                <p>Client Coordinator</p>
+                <p>Manages client communication and ensures satisfaction with our services.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Interior Design Co. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/interiorndecorideas/"><img
+                        src="https://th.bing.com/th?id=OIP.ECzNbQR_AZfAJQfBPXjMGgHaHa&w=250&h=250&c=8&rs=1&qlt=90&r=0&o=6&dpr=1.3&pid=3.1&rm=2"
+                        alt="Facebook"></a>
+                <a href="https://www.instagram.com/interiordesignmag/"><img
+                        src="data:image/jpeg;base64,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"
+                        alt="Instagram"></a>
+                <a href="https://in.linkedin.com/in/interior-designer-384296206?trk=people-guest_people_search-card"><img
+                        src="https://th.bing.com/th?id=OIP.ozDiSGJlUqI6815cRlJiNAHaHa&w=250&h=250&c=8&rs=1&qlt=90&r=0&o=6&dpr=1.3&pid=3.1&rm=2"
+                        alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

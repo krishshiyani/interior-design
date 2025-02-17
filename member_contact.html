@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Team Member</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Populate member name and position from URL
+        window.onload = function() {
+            const params = new URLSearchParams(window.location.search);
+            document.getElementById('memberName').value = params.get('name');
+            document.getElementById('memberPosition').value = params.get('position');
+            document.getElementById('displayName').innerText = params.get('name') + ' (' + params.get('position') + ')';
+        };
+    </script>
+</head>
+<body>
+
+    <!-- Contact Form for Team Member -->
+    <section class="contact-team">
+        <h2>Contact <span id="displayName">Team Member</span></h2>
+        <form action="contact_team.php" method="POST" class="contact-form">
+            <input type="hidden" name="memberName" id="memberName">
+            <input type="hidden" name="memberPosition" id="memberPosition">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+</body>
+</html>
